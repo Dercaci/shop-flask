@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+
+{% block title %}
+<title>Add product</title>
+{% endblock %}
+
+{% block body %}
+<div class="container">
+    <h1>Add product</h1>
+    <form method="post">
+        <input type="text" class="form-control" name="title" id="title" placeholder="Input the name of product"><br>
+        <input type="number" class="form-control" name="price" id="price" placeholder="Input the price of product"><br>
+        <input type="number" class="form-control" name="memory" id="memory" placeholder="Input the memory of product"><br>
+        <input type="number" class="form-control" name="camera" id="camera" placeholder="Input the maximal resolution of camera ot the product"><br>
+        <input type="number" class="form-control" name="ram" id="ram" placeholder="Input the operative memory of product"><br>
+        <input type="number" class="form-control" name="color" id="color" placeholder="Input the color of product"><br>
+        <button class="btn btn-succes" type="submit">Add product</button>
+    </form>
+</div>
+{% endblock %}
